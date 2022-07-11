@@ -18,16 +18,6 @@ package aufgabe1
 
 // Liefert die Teilliste im halboffenen Intervall [begin, end[
 func (list *LinkedList) SubList(begin, end int) *LinkedList {
-	if begin >= end || list.Empty() {
-		return MakeLinkedList()
-	}
-	if begin < 0 {
-		begin = 0
-	}
-	if begin > 0 {
-		return list.Next.SubList(begin-1, end-1)
-	}
-	newHead := MakeLinkedList(list.Id)
-	newHead.Next = list.Next.SubList(0, end-1)
-	return newHead
+	// TODO
+	return nil
 }

@@ -13,16 +13,6 @@ package aufgabe4
 
 // Liefert true, falls der Baum mindestens n Elemente hat.
 func (tree *BinTree) HasAtLeastNElements(n int) bool {
-	if n <= 0 {
-		return true
-	}
-	if tree.Empty() {
-		return false
-	}
-	for i := 0; i < n; i++ {
-		if tree.Left.HasAtLeastNElements(i) && tree.Right.HasAtLeastNElements(n-i-1) {
-			return true
-		}
-	}
+	// TODO
 	return false
 }

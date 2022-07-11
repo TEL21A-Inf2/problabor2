@@ -18,9 +18,5 @@ package aufgabe5
 
 // Hängt den angegebenen String an alle Elemente an.
 func (list BucketList) AppendAll(suffix string) {
-	for _, bucket := range list {
-		for i := range bucket {
-			bucket[i] += suffix
-		}
-	}
+	// TODO
 }

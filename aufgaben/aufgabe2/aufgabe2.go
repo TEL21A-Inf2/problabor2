@@ -20,12 +20,6 @@ package aufgabe2
 
 // Dreht die Liste um und liefert den neuen Kopf.
 func (list *LinkedList) Reverse() *LinkedList {
-	if list.Empty() || list.Next.Empty() {
-		return list
-	}
-	newEnd := list.Next
-	newHead := list.Next.Reverse()
-	list.Next = newEnd.Next
-	newEnd.Next = list
-	return newHead
+	// TODO
+	return nil
 }

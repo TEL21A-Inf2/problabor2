@@ -16,20 +16,6 @@ package aufgabe3
 
 // Liefert die Tiefe des Knotens mit dem Wert value.
 func (tree *BinTree) DepthOf(value int) int {
-	if tree.Empty() {
-		return -1
-	}
-	if tree.Value == value {
-		return 0
-	}
-	lDepth := tree.Left.DepthOf(value)
-	rDepth := tree.Right.DepthOf(value)
-	max := lDepth
-	if rDepth > max {
-		max = rDepth
-	}
-	if max >= 0 {
-		return max + 1
-	}
+	// TODO
 	return -1
 }
